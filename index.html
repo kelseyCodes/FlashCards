@@ -3,8 +3,8 @@
     <head>
         <title>Flash Cards</title>
         <!-- We've provided some styles for you, aren't we nice? -->
-        <link rel="stylesheet" type="text/css" href="reset.css" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
     </head>
     <body ng-app="flashCards">
    
@@ -43,9 +43,11 @@
         	</div>
 
         </div>
-        	<script src="angular.js"></script>
+        	<script src="lib/angular.js"></script>
         	<script src="app.js"></script>
-        	<script src="main.controller.js"></script>
-            <script src="stats.controller.js"></script>
+             <script src="js/factories/Flashcardfactory.js"></script>
+            <script src="js/factories/ScoreFactory.js"></script>
+        	<script src="js/controllers/main.controller.js"></script>
+            <script src="js/controllers/stats.controller.js"></script>
     </body>
 </html>
