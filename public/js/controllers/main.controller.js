@@ -2,8 +2,9 @@ app.controller('MainController', function ($scope, FlashCardsFactory, ScoreFacto
 
 	$scope.categories = ['MongoDB', 'Express', 'Angular', 'Node'];
 
-
+	$scope.activeCat = null;
 	$scope.getCategoryCards = function(category){
+		$scope.activeCat = category;
 		FlashCardsFactory.getFlashCards(category).then(function(data){
 			$scope.flashCards = data;
 		});

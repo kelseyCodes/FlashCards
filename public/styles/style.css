@@ -8,9 +8,7 @@
   margin-right: 15px;
   cursor: pointer;
   outline: none; }
-  .category-button.notActive {
-    background: none;
-  }
+
   .category-button.active {
     background: gainsboro; }
 

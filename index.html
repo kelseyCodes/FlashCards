@@ -12,9 +12,9 @@
         </div>
 
         <div ng-controller="MainController">
-            <button class="category-button" ng-repeat="category in categories" ng-click="getCategoryCards(category)" ng-class="{active: category, notActive: !category}">{{category}}</button>
+            <button class="category-button" ng-repeat="category in categories" ng-click="getCategoryCards(category)" ng-class="{active: activeCat == category}">{{category}}</button>
 
-            <button class="category-button" ng-click="getCategoryCards()" ng-class="{active: category, notActive: !category}">All Questions</button>
+            <button class="category-button" ng-click="getCategoryCards()" ng-class="{active: activeCat == category}">All Questions</button>
        
         	<div
         		ng-repeat="flashCard in flashCards | orderBy : 'question'"
